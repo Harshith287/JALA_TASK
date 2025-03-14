@@ -1,0 +1,48 @@
+.menu-container{
+    min-width:15vw;
+    background-color:  #1E282D ;
+}
+.profile-container{
+    margin-left: 10px;
+}
+.user{
+    margin-top:10px;
+    margin-left:20px;
+}
+.menu{
+    margin-left:-30px;
+    margin-top:20px;
+    list-style-type: none;
+}
+.menu-item{
+    cursor: pointer;
+    height:6vh;
+    color:rgb(161, 153, 153)
+}
+
+.menu-item:hover{
+    color:white;
+    background-color: rgba(13, 13, 13, 0.414);
+    /* border-left:3px solid #3B8DBD; */
+}
+.list-container{
+    gap:10px;
+}  
+.submenu {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 5px;
+  }
+  
+  .submenu li {
+    padding: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    transition:  0.3s ease;
+  }
+  
+  .submenu li:hover {
+    background: #3a4a5e;
+  }
+
+  

@@ -1,0 +1,15 @@
+.app-container{
+    height:100%;
+}
+.menuContainer{
+    min-width: 250px;
+}
+.employee-container{
+    justify-content: space-between;
+    background-color: #ECEFF1;
+}
+.employee-details-container{
+    border-top:solid 3px rgb(98, 204, 239);
+    border-radius: 8px;
+    background-color: white;
+}

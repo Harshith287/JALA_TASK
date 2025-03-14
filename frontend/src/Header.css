@@ -1,0 +1,16 @@
+.header{
+    background-color: #3B8DBD;
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    height:8vh;
+    align-items: center;
+}
+.magnus{
+    font-size: 24px;
+    margin-left:60px;
+}
+.btn{
+    color:white;
+    margin-right: 20px;
+}

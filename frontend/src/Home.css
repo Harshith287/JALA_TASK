@@ -1,0 +1,50 @@
+.main-container{
+    background-color: #ECEFF3 ;
+    /* height:100%; */
+}
+.home-container{
+    height:100%;
+}
+.heading{
+    /* margin-top:20vh; */
+    font-weight: 500;
+    margin-top:10vh;
+}
+.para{
+    font-size:14px;
+}
+.academy-info{
+    font-size:14.5px;
+    margin-left:5vw;
+    text-align: center;
+    font-weight: 600;
+    margin-right:4vw;
+    line-height:2;
+}
+.card-container{
+    padding:10px;
+    border-top:solid 3px #3B8DBD;
+    border-radius:8px;
+    font-size: 15px;
+}
+.jala{
+    line-height: 2;
+    font-size: 15px;
+}
+.yellow{
+    background-color: yellow;
+    font-weight: 600;
+}
+.footer{
+    background-color: white;
+    height:100vh;
+    padding:10px;
+    font-weight: 600;
+    font-size:14px;
+    height:10vh;
+}
+.blue{
+    color:#3B8DBD;
+    cursor:pointer;
+}
+
