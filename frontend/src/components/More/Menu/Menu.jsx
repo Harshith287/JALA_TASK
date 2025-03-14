@@ -6,6 +6,7 @@ import { useState } from "react";
 const Menu = () => {
     const [activeMenu, setActiveMenu] = useState('Single Menus');
     const [click, setOnClick] = useState();
+    const[click2,setOnClick2]=useState()
     const [hoveredMenu, setHoveredMenu] = useState(null); 
 
     const menus = ['Testing', 'Java', '.Net', 'Data Base'];
@@ -75,7 +76,7 @@ const Menu = () => {
                                 {submenu.subnames.map((subname, idx) => (
                                     <button
                                         key={idx}
-                                        onClick={() => onMenuClick(subname)}
+                                        onClick={() => setOnClick2(subname)}
                                         style={{
                                             backgroundColor: activeMenu === subname ? 'white' : '#38b8db',
                                             color: activeMenu === subname ? 'black' : 'white',
@@ -93,7 +94,7 @@ const Menu = () => {
                         )}
                     </div>
                 ))}
-                {click && <p>You have selected {click} menu option</p>}
+                {click2 && <p>You have selected {click2} menu option</p>}
             </div>
         );
     };
