@@ -72,7 +72,7 @@ const Menu = () => {
                     >
                         <h6 style={{backgroundColor:'#38b8db',color:'white',width:'150px',padding:'10px',cursor:'pointer'}}>{submenu.name}</h6>
                         {hoveredMenu === submenu.name && (
-                            <div>
+                            <div className="d-flex flex-column " style={{marginLeft:'10vw'}}>
                                 {submenu.subnames.map((subname, idx) => (
                                     <button
                                         key={idx}
@@ -80,11 +80,11 @@ const Menu = () => {
                                         style={{
                                             backgroundColor: activeMenu === subname ? 'white' : '#38b8db',
                                             color: activeMenu === subname ? 'black' : 'white',
-                                            borderTop: activeMenu === subname ? '2px solid #38b8db' : 'none',
                                             padding: '8px',
-                                            marginBottom: '5px',
+                                            // marginBottom: '5px',
                                             cursor: 'pointer',
-                                            border: 'none'
+                                            border:'none',
+                                            width:'150px'
                                         }}
                                     >
                                         {subname}
@@ -120,7 +120,6 @@ const Menu = () => {
                                         color: activeMenu === 'Single Menus' ? 'black' : 'white',
                                         borderTop: activeMenu === 'Single Menus' ? '2px solid #38b8db' : 'none',
                                         padding: '10px',
-                                        border: 'none',
                                         cursor: 'pointer',
                                     }}
                                 >
@@ -134,7 +133,6 @@ const Menu = () => {
                                         color: activeMenu === 'Sub Menus' ? 'black' : 'white',
                                         borderTop: activeMenu === 'Sub Menus' ? '2px solid #38b8db' : 'none',
                                         padding: '10px',
-                                        border: 'none',
                                         cursor: 'pointer'
                                     }}
                                 >

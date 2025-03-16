@@ -27,7 +27,7 @@ const Tooltips=()=>{
                         </button>
                         <hr/>
                         <div className="d-flex justify-content-center align-items-center mb-3" >
-                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title={text} onClick={onClick}>
+                            <button type="button" className="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title={text} onClick={onClick}>
                             Tooltip on bottom
                             </button>
                         </div>

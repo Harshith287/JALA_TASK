@@ -95,8 +95,7 @@ const CSSProperties=()=>{
                                         borderTop: activeTab === tab ? '2px solid #38b8db' : 'none',
                                         padding: '8px',
                                         marginBottom: '5px',
-                                        cursor: 'pointer',
-                                        border: 'none'
+                                        cursor: 'pointer'
                                     }}
                                     onClick={()=>onTabClick(tab)}>
                                         {tab}

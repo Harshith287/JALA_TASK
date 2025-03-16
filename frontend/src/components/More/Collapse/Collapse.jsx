@@ -92,7 +92,6 @@ const Collapse=()=>{
                                             padding: '8px',
                                             marginBottom: '5px',
                                             cursor: 'pointer',
-                                            border: 'none'
                                         }}
                                         onClick={()=>onTabChange(tab)}>{tab}</button>
                                     ))

@@ -11,13 +11,13 @@ const Popups=()=>{
         window.open('https://www.google.com/',history,'height=200,width=200')
     }
     const onPopup2=()=>{
-        window.open('https://www.tutorialspoint.com/index.htm',history,'height=200,width=200')
+        window.open('https://www.tutorialspoint.com/index.htm',history,'height=200,width=200,left=200%')
     }
     const onPopup3=()=>{
-        window.open('https://www.tutorialsteacher.com/',history,'height=200,width=200')
+        window.open('https://www.tutorialsteacher.com/',history,'height=200,width=200,left=600%')
     }
     const onPopup4=()=>{
-        window.open('/',history,'height=200,width=200')
+        window.open('/',history,'height=200,width=200,left=1000%')
     }
 
     const [show, setShow] = useState(false);
@@ -45,7 +45,7 @@ const Popups=()=>{
                             <div className='btn-container d-flex flex-wrap justify-content-center align-items-center gap-5 p-5'>
                                  <button className='btn ' style={{backgroundColor:'#3B8DBD',color:'white',width:'170px'}}
                                  onClick={onPopup1}>Popup One</button>
-                                 <button className='btn ' style={{backgroundColor:'#3B8DBD',color:'white',width:'170px'}} onClick={onPopup2}>Popup Two</button>
+                                 <button className='btn ' style={{backgroundColor:'#3B8DBD',color:'white',width:'170px'}}  onClick={onPopup2}>Popup Two</button>
                                  <button className='btn 'style={{backgroundColor:'#3B8DBD',color:'white',width:'170px'}} onClick={onPopup3}>Popup Three</button>
                                  <button className='btn 'style={{backgroundColor:'#3B8DBD',color:'white',width:'170px'}} onClick={onPopup4}>Popup Duplicate</button>
                                  <button className='btn ' style={{backgroundColor:'#3B8DBD',color:'white',width:'170px'}}

@@ -27,14 +27,14 @@ const IFrames=()=>{
                                 <iframe 
                                 src='https://jalaacademy.com/' 
                                 title="jala"
-                                style={{width:'100%', height:400}}>
+                                style={{width:'100%', height:300}}>
                                 </iframe>
 
                                 <h2>Frame 2</h2>
                                 <iframe 
                                 src='https://www.techtarget.com/' 
                                 title="techtarget"
-                                style={{width:'100%', height:400}}>
+                                style={{width:'100%', height:300}}>
                                 </iframe>
                             </div>
                         </div>

@@ -72,7 +72,6 @@ const AutoComplete=()=>{
                                             padding: '8px',
                                             marginBottom: '5px',
                                             cursor: 'pointer',
-                                            border: 'none'
                                         }}
                                         onClick={()=>onTabClick(tab)}>
                                             {tab}

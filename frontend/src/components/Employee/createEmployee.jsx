@@ -3,7 +3,7 @@ import Sidebar from '../../Sidebar'
 import { FaAngleRight } from 'react-icons/fa';
 import { FaTachometerAlt } from "react-icons/fa";
 import './createEmployee.css'
-import { use, useState } from 'react';
+import {  useState } from 'react';
 import axios from 'axios'
 const Employee=()=>{
 

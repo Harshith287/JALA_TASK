@@ -21,6 +21,8 @@ const intializeDBandServer=()=>{
     )
 }
 intializeDBandServer()
+
+
 //register
 
 app.post('/register',async(req,res)=>{
@@ -50,6 +52,7 @@ app.post('/register',async(req,res)=>{
 })
 
 //login
+
 app.post('/login',async(req,res)=>{
     const{email,password}=req.body
     try {
@@ -65,7 +68,7 @@ app.post('/login',async(req,res)=>{
             return res.status(400).json({ error: 'Password is not correct' });
         }
 
-        const token = jwt.sign({ userId: user._id }, JWT_SECRET, { expiresIn: '1h' });
+        const token = jwt.sign({ userId: user._id }, JWT_SECRET, { expiresIn: '1d' });
 
        return res.json({ message: 'Login Successful', token });
     } catch (e) {

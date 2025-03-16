@@ -58,11 +58,24 @@ const SearchEmployee=()=>{
             setFilteredEmployees(employees); 
             return;
         }
+
+        if(!mobileNo)
+        {
+            const result = employees.filter((item) => {
+                const fullName = `${item.firstName} ${item.lastName}`.toLowerCase();
+                return (
+                    (searchName && fullName.includes(searchName)) || 
+                    (searchMobile && item.mobileNo.includes(searchMobile))
+                );
+            });
+            setFilteredEmployees(result);
+            return;
+        }
     
         const result = employees.filter((item) => {
             const fullName = `${item.firstName} ${item.lastName}`.toLowerCase();
             return (
-                (searchName && fullName.includes(searchName)) || 
+                (searchName && fullName.includes(searchName)) && 
                 (searchMobile && item.mobileNo.includes(searchMobile))
             );
         });
@@ -232,8 +245,8 @@ const SearchEmployee=()=>{
                                                     <td>{item.country}</td>
                                                     <td>{item.city}</td>
                                                     <td>
-                                                        <button className='btn btn-success ' style={{width:'40px',height:'30px',fontSize:'12px'}} onClick={() => onEdit(item)}>Edit</button>
-                                                        <button className='btn btn-danger' style={{width:'50px',height:'30px',fontSize:'12px'}} onClick={() => onDelete(item._id)}>Delete</button>
+                                                        <button className='btn btn-success ' style={{width:'40px',height:'30px',fontSize:'12px',paddingLeft:'8px'}} onClick={() => onEdit(item)}>Edit</button>
+                                                        <button className='btn btn-danger' style={{width:'50px',height:'30px',fontSize:'12px',paddingLeft:'8px'}} onClick={() => onDelete(item._id)}>Delete</button>
                                                     </td>
                                                 </tr>
                                             ))}

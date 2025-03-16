@@ -4,6 +4,12 @@ import Sidebar from '../../../Sidebar'
 
 import { FaAngleRight } from 'react-icons/fa';
 import { FaTachometerAlt } from "react-icons/fa";
+
+import growicLogo from '../../../assets/growicLogo.png';
+import googleLogo from '../../../assets/googleLogo.webp';
+import jalaLogo from '../../../assets/jalatLogo.png';
+import linkedinLogo from '../../../assets/linkedinLogo.jpg';
+
 const Links=()=>{
     const links=['Working Links','Broken Links','Image Links','Status Codes']
     const[activeTab,setActiveTab]=useState('Working Links')
@@ -25,14 +31,24 @@ const Links=()=>{
             <a target='_blank' href='https://magnus.jalatechnologies.com/www.brokenlinkcheck.com/' style={{ color:'green',textDecoration:'none'}}>Link3</a>
         </div>
     )
-    const renderImageLinks=()=>(
-        <div className='d-flex justify-content-center align-items-center gap-5'>
-            <a target='_blank' href='https://www.growictech.com/' ><img src='../../../assets/growicLogo.png'style={{width:150}}/></a>
-            <a target='_blank' href='https://www.google.com' ><img src='../../../assets/googleLogo.webp' style={{width:150}}/></a>
-            <a target='_blank' href='https://jalatechnologies.com/' ><img src='../../../assets/jalatLogo.png' style={{width:150}}/></a>
-            <a target='_blank' href='https://www.linkedin.com/feed/' ><img src='../../../assets/linkedinLogo.jpg' style={{width:150}}/></a>
+
+    const renderImageLinks = () => (
+        <div className='d-flex justify-content-center align-items-center gap-3'>
+          <a target='_blank' href='https://www.growictech.com/'>
+            <img src={growicLogo} style={{ width: 100 }} alt="Growic Logo" />
+          </a>
+          <a target='_blank' href='https://www.google.com'>
+            <img src={googleLogo} style={{ width: 100 }} alt="Google Logo" />
+          </a>
+          <a target='_blank' href='https://jalaacademy.com/'>
+            <img src={jalaLogo} style={{ width: 100 }} alt="Jala Technologies Logo" />
+          </a>
+          <a target='_blank' href='https://www.linkedin.com/'>
+            <img src={linkedinLogo} style={{ width: 100 }} alt="LinkedIn Logo" />
+          </a>
         </div>
-    )
+      );
+
     const renderStatusCodes=()=>(
         <div className='d-flex justify-content-center align-items-center gap-5'>
             <a target='_blank' href='https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#successful_responses' style={{color:'blue',textDecoration:'none'}}>200</a>
@@ -65,8 +81,7 @@ const Links=()=>{
                                             borderTop: activeTab === link ? '2px solid #38b8db' : 'none',
                                             padding: '8px',
                                             marginBottom: '5px',
-                                            cursor: 'pointer',
-                                            border: 'none'
+                                            cursor: 'pointer'
                                         }}
                                         onClick={()=>setActiveTab(link)}>
                                             {link}
